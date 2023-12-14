@@ -1,0 +1,22 @@
+<h1 style = "text-align: center">All Users</h1>
+<div class="container">
+  <table>
+    <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Role</th>
+        </tr>
+    </thead>
+    <tbody>
+      <% @users.each do |user| %>
+        <tr>
+          <td><%= user.name %></td>
+          <td><%= user.email %></td>
+          <td><%= user.user_type %></td>
+        </tr>
+      <% end %>
+    </tbody>
+</table>
+
+</div>
